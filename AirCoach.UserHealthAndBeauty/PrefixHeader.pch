@@ -1,0 +1,35 @@
+//
+//  PrefixHeader.pch
+//  AirCoach.UserHealthAndBeauty
+//
+//  Created by xuan on 16/5/26.
+//  Copyright © 2016年 xuan. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "NIMSDK.h"
+#import "NTESGlobalMacro.h"
+#import "NIMKit.h"
+#import "Header.h"
+#import <CocoaLumberjack/CocoaLumberjack.h>
+#import "NIMavchat.h"
+
+#ifdef DEBUG
+static DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#else
+static DDLogLevel ddLogLevel = DDLogLevelInfo;
+#endif
+
+#define NTES_USE_CLEAR_BAR - (BOOL)useClearBar{return YES;}
+
+#define NTES_FORBID_INTERACTIVE_POP - (BOOL)forbidInteractivePop{return YES;}
+
+
+#endif
+#endif

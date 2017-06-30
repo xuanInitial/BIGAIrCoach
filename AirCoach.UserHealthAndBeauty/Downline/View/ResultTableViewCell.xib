@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="resultCell" rowHeight="143" id="KGk-i7-Jjw" customClass="ResultTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="143"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="142"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="检测结果:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qN6-KA-L4p">
+                        <rect key="frame" x="15" y="5" width="72" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="72" id="cMg-PM-tkp"/>
+                            <constraint firstAttribute="height" constant="21" id="nzT-MG-uS1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="929年，考入清华大学外文系。1932年，在清华大学古月堂前结识杨绛。[1-2]  1937年，以《十七十八世纪英国文学中的中国》一文获牛津大学艾克赛特学院学士学位。[3]  1941年，完成《谈艺录》《写在人生边上》的写作。1947年，长篇小说《围" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXo-dA-XZj">
+                        <rect key="frame" x="15" y="30" width="290" height="108"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="49" id="5eI-Yh-Jso"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.46274509800000002" green="0.46274509800000002" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qN6-KA-L4p" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="BZ7-3P-qRD"/>
+                    <constraint firstItem="eXo-dA-XZj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="LKl-K5-mDI"/>
+                    <constraint firstItem="eXo-dA-XZj" firstAttribute="top" secondItem="qN6-KA-L4p" secondAttribute="bottom" constant="4" id="MhX-ze-32K"/>
+                    <constraint firstAttribute="trailing" secondItem="eXo-dA-XZj" secondAttribute="trailing" constant="15" id="lab-WP-eHQ"/>
+                    <constraint firstItem="qN6-KA-L4p" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="uFr-Lq-P4a"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="489" y="409.5"/>
+        </tableViewCell>
+    </objects>
+</document>
